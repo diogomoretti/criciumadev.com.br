@@ -1,0 +1,142 @@
+@import 'nib';
+@import 'normalize';
+@import 'icomoon';
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700');  
+
+html,
+body
+  height 100%
+  font-family 'Open Sans', sans-serif
+  
+*
+  box-sizing border-box
+  
+
+.container
+  max-width 1170px
+  margin 0 auto
+  position relative
+  
+$section-title
+  font-size 36px
+  font-weight 600
+  margin 80px 0
+  color #6a6469
+  text-align center
+  
+$section-container
+  padding-bottom 80px
+
+.header-container
+  @extend .container
+  height 100%
+
+.header
+  background url('../img/Cricuma-Dev.jpg') no-repeat center right #222839
+  height 650px
+  width 100%
+
+  .menu
+    @extend .container
+    padding 25px 0
+    display flex
+
+  .menu-item
+    padding-right 25px
+    
+  .menu-item-link
+    font-family 'Open Sans'
+    font-weight 300
+    text-decoration none
+    color #FFFFFF
+  
+  .title
+    text-indent -99999px
+    background url('../img/logo-criciuma_dev.svg') no-repeat
+    background-size 100% 100%
+    height 80px
+    display block
+    
+  .link-inscricao
+    padding 15px 30px
+    font-size 20px
+    font-weight bold
+    background-color #42c564
+    color #FFFFFF
+    text-decoration none
+    border-radius 5px
+    margin-top 45px
+    display block
+  
+  .title-container
+    width 280px
+    position absolute
+    top 25%
+    left 25%
+    
+  .arrow-down
+    background url('../img/arrow_down.png') no-repeat center center
+    display block
+    height 30px
+    width 80px
+    left 50%
+    margin-left -(@width/2)
+    position absolute
+    bottom 70px
+
+.event
+  background-color #f7f6f7
+  overflow hidden
+  
+  .event-container
+    @extend .container
+    @extend $section-container
+
+  .event-title
+    @extends $section-title
+    
+  .event-description
+    display flex
+    justify-content center
+    font-size 14px
+    color #666666
+
+    p
+      margin 25px
+      width 300px
+      
+.speakers
+  .speakers-container
+    @extend .container
+
+  .speakers-title
+    @extends $section-title
+
+  .speakers-list,
+  .speakers-midias
+    list-style none
+  
+  .speakers-list
+    display flex
+    flex-wrap wrap
+    padding 0
+    margin 0
+    
+  .speakers-item
+    width 50%
+    padding-left 240px
+    position relative
+
+  .speakers-midias-item
+    display inline-block
+
+  .speakers-item-img
+    height 180px
+    width 220px
+    background #f7f6f7
+    display inline-block
+    position absolute
+    left 0
+    
+  
+    
